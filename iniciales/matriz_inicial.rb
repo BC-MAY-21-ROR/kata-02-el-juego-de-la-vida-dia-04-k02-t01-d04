@@ -9,7 +9,7 @@ class Matriz_inicial
     def create_matrix
         for i in 0..(@x-1) do
             for j in 0..(@y-1) do
-                (i==0 || i==@x-1) || (j==0 || j==@y-1) ? @c_n[j,i] = 0 : @c_n[j,i] = rand(0..1) 
+                i==0 || i==@x-1 || j==0 || j==@y-1 ? @c_n[j,i] = 0 : @c_n[j,i] = rand(0..1) 
             end
         end
     end

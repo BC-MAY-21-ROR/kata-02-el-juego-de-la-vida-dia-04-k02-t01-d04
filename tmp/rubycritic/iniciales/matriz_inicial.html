@@ -47,7 +47,7 @@
     <div class="file-time">
       <span class="committed-at">
         
-          Never committed
+          Updated <time class='js-timeago' datetime='2021-06-15 12:40:32 -0500'>2021-06-15 12:40:32 -0500</time>
         
       </span>
     </div>
@@ -72,11 +72,11 @@
               <div><span class="metric">3</span><small> methods</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">6.3</span><small> complexity/method</small></div>
-              <div><span class="metric">0</span><small> churn</small></div>
+              <div><span class="metric">6.4</span><small> complexity/method</small></div>
+              <div><span class="metric">1</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">18.9</span><small> complexity</small></div>
+              <div><span class="metric">19.13</span><small> complexity</small></div>
               <div><span class="metric">0</span><small> duplications</small></div>
             </div>
           </div>
@@ -108,7 +108,7 @@
     def create_matrix
         for i in 0..(@x-1) do<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Matriz_inicial#create_matrix calls '@x-1' 2 times</span>              <span>Locations:</span>                  <a href="matriz_inicial.html#L10" class="js-smell-location">0</a>                  <a href="matriz_inicial.html#L12" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md" target="_blank"><b>UncommunicativeVariableName</b></a>        </span>      </div>      <span>Matriz_inicial#create_matrix has the variable name 'i'</span>          </div>  </li></ol>
             for j in 0..(@y-1) do<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Matriz_inicial#create_matrix calls '@y-1' 2 times</span>              <span>Locations:</span>                  <a href="matriz_inicial.html#L11" class="js-smell-location">0</a>                  <a href="matriz_inicial.html#L12" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md" target="_blank"><b>UncommunicativeVariableName</b></a>        </span>      </div>      <span>Matriz_inicial#create_matrix has the variable name 'j'</span>          </div>  </li></ol>
-                (i==0 || i==@x-1) || (j==0 || j==@y-1) ? @c_n[j,i] = 0 : @c_n[j,i] = rand(0..1) <ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Matriz_inicial#create_matrix calls '@x-1' 2 times</span>              <span>Locations:</span>                  <a href="matriz_inicial.html#L10" class="js-smell-location">0</a>                  <a href="matriz_inicial.html#L12" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Matriz_inicial#create_matrix calls '@y-1' 2 times</span>              <span>Locations:</span>                  <a href="matriz_inicial.html#L11" class="js-smell-location">0</a>                  <a href="matriz_inicial.html#L12" class="js-smell-location">1</a>                  </div>  </li></ol>
+                i==0 || i==@x-1 || j==0 || j==@y-1 ? @c_n[j,i] = 0 : @c_n[j,i] = rand(0..1) <ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Matriz_inicial#create_matrix calls '@x-1' 2 times</span>              <span>Locations:</span>                  <a href="matriz_inicial.html#L10" class="js-smell-location">0</a>                  <a href="matriz_inicial.html#L12" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>Matriz_inicial#create_matrix calls '@y-1' 2 times</span>              <span>Locations:</span>                  <a href="matriz_inicial.html#L11" class="js-smell-location">0</a>                  <a href="matriz_inicial.html#L12" class="js-smell-location">1</a>                  </div>  </li></ol>
             end
         end
     end
