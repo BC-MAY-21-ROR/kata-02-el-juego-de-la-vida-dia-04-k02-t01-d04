@@ -14,7 +14,6 @@ class Reglas
                 end
             end
         end
-        puts no_Vecinos
         return self.reglas(no_Vecinos, @c_n[@j,@i])
     end
     

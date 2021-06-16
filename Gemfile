@@ -10,3 +10,5 @@ gem 'rake'
 gem 'rexml', '~> 3.2', '>= 3.2.4'
 gem 'rubycritic'
 gem 'rubycritic-small-badge', :require => false
+gem 'rubocop', require: false
+gem 'rspec'
